@@ -14,5 +14,11 @@ mv cfe-7.0.0.src llvm-7.0.0.src/tools/clang
     cmake ../ -DLLVM_ENABLE_ASSERTIONS=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$ICSC_HOME
     make -j12
     make install
+
+    cd $ICSC_HOME
+    rm -f cfe-7.0.0.src.tar.xz
+    rm -f llvm-7.0.0.src.tar.xz
+
+    rm -rf llvm-7.0.0.src/
 )
 

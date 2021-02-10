@@ -12,5 +12,10 @@ tar -xvf v3.13.0.tar.gz
     cmake ../cmake/ -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$ICSC_HOME -DBUILD_SHARED_LIBS=ON -Dprotobuf_BUILD_TESTS=OFF
     make -j12
     make install
+
+
+    cd $ICSC_HOME
+    rm -f v3.13.0.tar.gz
+    rm -rf protobuf-3.13.0
 )
 

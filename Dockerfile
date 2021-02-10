@@ -61,3 +61,7 @@ RUN sh install-icsc.sh
 
 COPY run-tests.sh /systemc-compiler
 RUN /bin/bash -c "bash run-tests.sh"
+
+#COPY cleanup.sh /systemc-compiler
+#RUN /bin/bash -c "bash cleanup.sh"
+#
